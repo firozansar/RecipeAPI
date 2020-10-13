@@ -10,6 +10,8 @@
 		074E15F52535D42800DA8B41 /* RecipeAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074E15EB2535D42800DA8B41 /* RecipeAPI.framework */; };
 		074E15FA2535D42800DA8B41 /* RecipeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E15F92535D42800DA8B41 /* RecipeAPITests.swift */; };
 		074E15FC2535D42800DA8B41 /* RecipeAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 074E15EE2535D42800DA8B41 /* RecipeAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		074E16092535D66000DA8B41 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16082535D66000DA8B41 /* Recipe.swift */; };
+		074E160D2535D6D700DA8B41 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E160C2535D6D700DA8B41 /* Ingredient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		074E15F42535D42800DA8B41 /* RecipeAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		074E15F92535D42800DA8B41 /* RecipeAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAPITests.swift; sourceTree = "<group>"; };
 		074E15FB2535D42800DA8B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074E16082535D66000DA8B41 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		074E160C2535D6D700DA8B41 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		074E15ED2535D42800DA8B41 /* RecipeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				074E16072535D63200DA8B41 /* Model */,
 				074E15EE2535D42800DA8B41 /* RecipeAPI.h */,
 				074E15EF2535D42800DA8B41 /* Info.plist */,
 			);
@@ -84,6 +89,15 @@
 				074E15FB2535D42800DA8B41 /* Info.plist */,
 			);
 			path = RecipeAPITests;
+			sourceTree = "<group>";
+		};
+		074E16072535D63200DA8B41 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				074E16082535D66000DA8B41 /* Recipe.swift */,
+				074E160C2535D6D700DA8B41 /* Ingredient.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,7 @@
 				TargetAttributes = {
 					074E15EA2535D42800DA8B41 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 					074E15F32535D42800DA8B41 = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -194,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074E160D2535D6D700DA8B41 /* Ingredient.swift in Sources */,
+				074E16092535D66000DA8B41 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 		074E16002535D42800DA8B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
@@ -357,6 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = info.firozansari.RecipeAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +384,7 @@
 		074E16012535D42800DA8B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
@@ -389,6 +409,7 @@
 		074E16032535D42800DA8B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
 				INFOPLIST_FILE = RecipeAPITests/Info.plist;
@@ -407,6 +428,7 @@
 		074E16042535D42800DA8B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8H89UW35RQ;
 				INFOPLIST_FILE = RecipeAPITests/Info.plist;
