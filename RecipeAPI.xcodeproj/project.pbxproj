@@ -16,6 +16,9 @@
 		074E16162535DA4700DA8B41 /* RecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16152535DA4700DA8B41 /* RecipeLoader.swift */; };
 		074E161A2535DB2900DA8B41 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16192535DB2900DA8B41 /* HelperFunctions.swift */; };
 		074E161E2535DBE800DA8B41 /* RemoteRecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E161D2535DBE800DA8B41 /* RemoteRecipeLoader.swift */; };
+		074E16222535DE2A00DA8B41 /* XCTest+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16212535DE2A00DA8B41 /* XCTest+Helpers.swift */; };
+		074E16262535EB2D00DA8B41 /* RemoteRecipeLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16252535EB2D00DA8B41 /* RemoteRecipeLoaderTests.swift */; };
+		074E162A2535EE4E00DA8B41 /* XCTest+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074E16292535EE4E00DA8B41 /* XCTest+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 		074E16152535DA4700DA8B41 /* RecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLoader.swift; sourceTree = "<group>"; };
 		074E16192535DB2900DA8B41 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		074E161D2535DBE800DA8B41 /* RemoteRecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeLoader.swift; sourceTree = "<group>"; };
+		074E16212535DE2A00DA8B41 /* XCTest+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Helpers.swift"; sourceTree = "<group>"; };
+		074E16252535EB2D00DA8B41 /* RemoteRecipeLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeLoaderTests.swift; sourceTree = "<group>"; };
+		074E16292535EE4E00DA8B41 /* XCTest+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				074E15F92535D42800DA8B41 /* RecipeAPITests.swift */,
 				074E15FB2535D42800DA8B41 /* Info.plist */,
+				074E16212535DE2A00DA8B41 /* XCTest+Helpers.swift */,
+				074E16252535EB2D00DA8B41 /* RemoteRecipeLoaderTests.swift */,
+				074E16292535EE4E00DA8B41 /* XCTest+MemoryLeakTracking.swift */,
 			);
 			path = RecipeAPITests;
 			sourceTree = "<group>";
@@ -242,6 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074E16222535DE2A00DA8B41 /* XCTest+Helpers.swift in Sources */,
+				074E162A2535EE4E00DA8B41 /* XCTest+MemoryLeakTracking.swift in Sources */,
+				074E16262535EB2D00DA8B41 /* RemoteRecipeLoaderTests.swift in Sources */,
 				074E15FA2535D42800DA8B41 /* RecipeAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
