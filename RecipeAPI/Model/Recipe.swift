@@ -7,6 +7,8 @@
 
 import Foundation
 
+public typealias RecipeList = [Recipe]
+
 public struct Recipe: Codable {
     let name: String
     let ingredients: [Ingredient]
